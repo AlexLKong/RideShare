@@ -1,0 +1,97 @@
+
+
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sick Rides | Registration</title>
+
+      <link rel="stylesheet" href="signup.css"></link>
+  </head>
+  <body>
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+
+
+</head>
+
+
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                    <i class="fa fa-play-circle"></i>  <span class="light">Sick</span> Rides
+                </a>
+            </div>
+
+            
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+    
+
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#rides">Rides</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#login">Log In</a>
+                    </li>
+                </ul>
+            </div>
+ 
+        </div>
+
+    </nav>
+
+    <script src="js/jquery.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/jquery.easing.min.js"></script>
+
+    <script src="js/grayscale.js"></script>
+
+
+
+ <div id="blank">
+      <br><br><br><br><br>
+    </div>
+
+
+
+    <div id="driverInfo">
+        <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post" name="driver_info">
+        <p>First Name:<br><input type="first" class="signinput"name="fname" value="<?php if (isset($fname)) echo $fname;?>"></input><p><?php echo $errFName;?></p>
+        <p>Last Name:<br><input type="last" class="signinput" name="lname" value="<?php if (isset($lname)) echo $lname;?>"></input><p><?php echo $errLName;?></p>
+        <p>E-mail:<br><input type="email" class="signinput" name="email" value="<?php if (isset($email)) echo $email;?>"></input><p><?php echo $errEmail;?></p>
+        <p>Username (between 8-20 characters):<br><input type="username" class="signinput" name="username" value="<?php if (isset($username)) echo $username;?>"></input><p><?php echo $errUName;?></p>
+        <p>Password (between 8-25 characters):<br><input type="password" class="signinput" name="password"></input><p><?php echo $errPassword;?></p>
+        <p>Confirm Password:<br><input type="password" class="signinput" name="cpassword"></input></p><?php echo $errCPassword;?></p>
+       
+
+        <div class="submit">
+        <center> <input type="file" class="signinput" name="pic"><p><?php echo $errImg;?></p><br>
+        <input id="signup" type="submit" value="Create Account"></input><br><br></center></div>
+
+    </div>
+    <div id="blank">
+      <br><br><br>
+    </div>
+
+
+  </body>
+</html>

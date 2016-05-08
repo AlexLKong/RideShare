@@ -1,0 +1,42 @@
+
+div#driverInfo {
+  display: inline-block;
+  padding:20px 0px 0px 0px;
+  font-family: 'sans-serif', sans-serif;
+  font-size: small;
+  color: black;
+  max-width: 480px;
+  padding: 10px 25px 15px 35px;
+  margin: auto;
+  background-color: #FFFFFF;
+  border-style:  solid;
+  border-color: grey;
+  margin-bottom: 30px;
+  margin-left: 400px;
+}
+
+input#signup {
+  background-color: #ff4c4c;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.5);
+  color: white;
+  cursor: pointer;
+  font-family: 'Antic', sans-serif;
+  font-style: bold;
+  font-weight: 900;
+  margin: 0px 0px;
+  padding: 7px 20px;
+}
+
+input#signup:hover {
+  background-color: #7ea7d8;
+}
+
+input#signup:active {
+  box-shadow: inset 0px 2px 2px #000000;
+  margin-top: 2px;
+}
+
+
+
